@@ -1,0 +1,58 @@
+/* Typography and base */
+body, h1, h2, h3, h4, h5, h6 { font-family: "Karma", sans-serif; }
+
+/* Design tokens */
+:root { --np-red: #e53935; --np-blue: #1e88e5; --np-yellow: #fdd835; --np-black: #111; --np-white: #fff; --np-grey-100: #f7f7f7; --np-grey-300: #e0e0e0; --np-grey-600: #666; }
+body { background: var(--np-grey-100); color: var(--np-black); }
+a { color: var(--np-blue); }
+
+/* Replacements for former inline styles */
+.sidebar-custom { display: none; z-index: 2; width: 40%; min-width: 300px; }
+.container-1200 { max-width: 1200px; margin: auto; padding-left: 16px; padding-right: 16px; }
+.main-container { max-width: 1200px; margin-top: 140px; }
+.full-width { width: 100%; }
+.about-image { display: block; margin: auto; max-width: 800px; width: 100%; height: auto; }
+.thumb-50 { width: 50px; }
+
+/* Spacing adjustment for W3 bar items */
+.w3-bar-block .w3-bar-item { padding: 20px; }
+
+/* Top bar refinements */
+.w3-top { box-shadow: 0 2px 6px rgba(0,0,0,0.08); background: var(--np-white); }
+.w3-top .w3-bar { border-top: 1px solid var(--np-grey-300); }
+.w3-top .w3-bar .w3-bar-item { padding: 8px 14px; border-bottom: 2px solid transparent; }
+.w3-top .w3-bar .w3-bar-item:hover { border-bottom-color: var(--np-blue); background: transparent; }
+
+/* Home intro */
+.intro-title { font-size: 2.6rem; letter-spacing: 1px; }
+.intro-subtitle { color: var(--np-grey-600); margin-top: 4px; }
+.features-row .feature-card { min-height: 120px; border-top: 4px solid var(--np-black); box-shadow: 0 4px 12px rgba(0,0,0,0.06); }
+.features-row .w3-third:nth-child(1) .feature-card { border-top-color: var(--np-red); }
+.features-row .w3-third:nth-child(2) .feature-card { border-top-color: var(--np-yellow); }
+.features-row .w3-third:nth-child(3) .feature-card { border-top-color: var(--np-blue); }
+.cta-buttons .w3-button { min-width: 150px; }
+
+/* Cards and sections */
+.w3-card { border-radius: 6px; }
+.w3-container h3 { margin-top: 12px; }
+.section-card { background: var(--np-white); border: 1px solid var(--np-grey-300); border-radius: 8px; padding: 20px; box-shadow: 0 8px 18px rgba(0,0,0,0.05); }
+.section-title { border-left: 6px solid var(--np-black); padding-left: 10px; margin: 8px 0 14px; }
+.section-title.red { border-left-color: var(--np-red); }
+.section-title.yellow { border-left-color: var(--np-yellow); }
+.section-title.blue { border-left-color: var(--np-blue); }
+.section-stack > .section-card { margin-bottom: 20px; }
+
+/* Footer */
+footer { border-top: 1px solid var(--np-grey-300); background: var(--np-white); }
+
+/* Lightbox */
+.lightbox-content { max-width: 960px; }
+.gallery-item { cursor: zoom-in; transition: transform .2s ease; }
+.gallery-item:hover { transform: scale(1.02); }
+
+/* Responsive tweaks */
+@media (max-width: 600px) {
+  .main-container { margin-top: 120px; }
+  .intro-title { font-size: 2rem; }
+}
+

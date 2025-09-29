@@ -2,159 +2,90 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title> Neoplanticismo</title>
+<title> Neoplasticismo</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
-<style>
-body,h1,h2,h3,h4,h5,h6 {font-family: "Karma", sans-serif}
-.w3-bar-block .w3-bar-item {padding:20px}
-</style>
+<link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
 
 <!-- Sidebar (hidden by default) -->
-<nav class="w3-sidebar w3-bar-block w3-card w3-top w3-xlarge w3-animate-left" style="display:none;z-index:2;width:40%;min-width:300px" id="mySidebar">
+<nav class="w3-sidebar w3-bar-block w3-card w3-top w3-xlarge w3-animate-left sidebar-custom" id="mySidebar">
   <a href="javascript:void(0)" onclick="w3_close()"
   class="w3-bar-item w3-button">Close Menu</a>
-  <a href="#obras" onclick="w3_close()" class="w3-bar-item w3-button">obras</a>
-  <a href="#artistas" onclick="w3_close()" class="w3-bar-item w3-button">Artistas</a>
-  <a href="#quees" onclick="w3_close()" class="w3-bar-item w3-button">¿Qué es?</a>
-  <a href="#contactos" onclick="w3_close()" class="w3-bar-item w3-button">contactos</a>
+  <a href="pages/obras.html" onclick="w3_close()" class="w3-bar-item w3-button">Obras</a>
+  <a href="pages/artistas.html" onclick="w3_close()" class="w3-bar-item w3-button">Artistas</a>
+  <a href="pages/quees.html" onclick="w3_close()" class="w3-bar-item w3-button">¿Qué es?</a>
+  <a href="pages/contacto.html" onclick="w3_close()" class="w3-bar-item w3-button">Contactos</a>
 </nav>
 
 <!-- Top menu -->
 <div class="w3-top">
-  <div class="w3-white w3-xlarge" style="max-width:1200px;margin:auto">
-    <div class="w3-button w3-padding-16 w3-left" onclick="w3_open()">☰</div>
-    <div class="w3-right w3-padding-16">Mail</div>
-    <div class="w3-center w3-padding-16">Neoplanticismo</div>
+  <div class="w3-white w3-xlarge container-1200">
+    <div class="w3-center w3-padding-16">Neoplasticismo</div>
+    <div class="w3-bar w3-light-grey w3-small w3-center">
+      <a href="index.html" class="w3-bar-item w3-button">Home</a>
+      <a href="pages/obras.html" class="w3-bar-item w3-button">Obras</a>
+      <a href="pages/artistas.html" class="w3-bar-item w3-button">Artistas</a>
+      <a href="pages/quees.html" class="w3-bar-item w3-button">¿Qué es?</a>
+      <a href="pages/historia.html" class="w3-bar-item w3-button">Historia</a>
+      <a href="pages/contacto.html" class="w3-bar-item w3-button">Contacto</a>
+    </div>
   </div>
 </div>
   
 <!-- !PAGE CONTENT! -->
-<div class="w3-main w3-content w3-padding" style="max-width:1200px;margin-top:100px">
+<div class="w3-main w3-content w3-padding main-container">
 
   <!-- First Photo Grid-->
-  <div class="w3-row-padding w3-padding-16 w3-center" id="obras">
-    <h3>Obras</h3>
-    <div class="w3-quarter">
-      <img src="bosqueneoplanticismo.jpg" alt="bosque" style="width:100%">
-      <h3>neoplanticist´s red´s t-shirt</h3>
-      <p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+  <!-- Home Intro -->
+  <section class="w3-container w3-padding-32 w3-center section-stack">
+    <img src="Imagenes/NEOPLASTICISMO.png" alt="Neoplasticismo" class="w3-image about-image">
+    <div class="w3-padding-32 container-1200 section-card">
+      <h2 class="intro-title section-title">Neoplasticismo</h2>
+      <p class="intro-subtitle">La vanguardia que redujo el arte a líneas, planos y color esencial.</p>
+      <p>El neoplasticismo (De Stijl) fue una vanguardia nacida en Países Bajos en 1917. Propuso reducir el arte a lo esencial: líneas rectas, ángulos rectos, planos, y colores primarios (rojo, amarillo, azul) junto con blanco y negro. Su objetivo era expresar un orden universal y armónico que trascendiera lo individual.</p>
+      <p>Impulsado por artistas como Piet Mondrian y Theo van Doesburg, el movimiento influyó profundamente en el diseño, la arquitectura y el arte modernos. En este sitio encontrarás sus <a class="w3-text-blue" href="pages/obras.html">obras</a> más representativas, a sus <a class="w3-text-blue" href="pages/artistas.html">artistas</a>, una explicación de <a class="w3-text-blue" href="pages/quees.html">qué es</a> el movimiento, su <a class="w3-text-blue" href="pages/historia.html">historia</a> y cómo <a class="w3-text-blue" href="pages/contacto.html">contactarnos</a>.</p>
+      <div class="w3-row-padding w3-padding-16 features-row">
+        <div class="w3-third">
+          <div class="w3-card w3-padding feature-card section-card">
+            <h4 class="section-title red">Principios</h4>
+            <p>Líneas verticales y horizontales, asimetría y equilibrio visual.</p>
+          </div>
+        </div>
+        <div class="w3-third">
+          <div class="w3-card w3-padding feature-card section-card">
+            <h4 class="section-title yellow">Paleta</h4>
+            <p>Colores primarios con blanco y negro para claridad y orden.</p>
+          </div>
+        </div>
+        <div class="w3-third">
+          <div class="w3-card w3-padding feature-card section-card">
+            <h4 class="section-title blue">Influencias</h4>
+            <p>Arquitectura, diseño y arte moderno hasta hoy.</p>
+          </div>
+        </div>
+      </div>
+      <div class="w3-center cta-buttons">
+        <a href="pages/quees.html" class="w3-button w3-black w3-margin-right">Aprender más</a>
+        <a href="pages/obras.html" class="w3-button w3-light-grey">Ver obras</a>
+      </div>
     </div>
-    <div class="w3-quarter">
-      <img src="mariposaneoplanticismo.jpg" alt="mariposaneoplanticismo" style="width:100%">
-      <h3>Neoplanticist´s white´s t-shirt</h3>
-      <p>Once again, some random text to lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.</p>
-    </div>
-    <div class="w3-quarter">
-      <img src="composiciónconrojoamarilloyazulneoplanticismo.jpg" alt="composiciónconrojoamarilloyazulneoplanticismo" style="width:100%">
-      <h3>Neoplanticist´s woman´s white´s t-shirt <t-shirt></t-shirt></h3>
-      <p>Lorem ipsum text praesent tincidunt ipsum lipsum.</p>
-      <p>What else?</p>
-    </div>
-    <div class="w3-quarter">
-      <img src="stijil1neoplanticismo.jpg" alt="Stijill 1" style="width:100%">
-      <h3>Neoplanticist´ Dressing</h3>
-      <p>Lorem ipsum text praesent tincidunt ipsum lipsum.</p>
-    </div>
-  </div>
-  
-  <!-- Second Photo Grid-->
-  <div class="w3-row-padding w3-padding-16 w3-center" id="artistas">
-    <h3>Artistas</h3>
-    <div class="w3-quarter">
-      <img src="gorraneoplanticismo.jpg" alt="Popsicle" style="width:100%">
-      <h3>Neoplanticist´s hat</h3>
-      <p>Lorem ipsum text praesent tincidunt ipsum lipsum.</p>
-    </div>
-    <div class="w3-quarter">
-      <img src="gorro2neoplanticismo.jpg" alt="Salmon" style="width:100%">
-      <h3>Neoplanticist's hat</h3>
-      <p>Once again, some random text to lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.</p>
-    </div>
-    <div class="w3-quarter">
-      <img src="atuendofemeninoneoplanticismo.jpg" alt="Sandwich" style="width:100%">
-      <h3>Female atuend neoplanticist</h3>
-      <p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p>
-    </div>
-    <div class="w3-quarter">
-      <img src="/w3images/croissant.jpg" alt="Croissant" style="width:100%">
-      <h3>Le French</h3>
-      <p>Lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.</p>
-    </div>
-  </div>
-
-  <!-- Pagination -->
-  <div class="w3-center w3-padding-32">
-    <div class="w3-bar">
-      <a href="#" class="w3-bar-item w3-button w3-hover-black">«</a>
-      <a href="#" class="w3-bar-item w3-black w3-button">1</a>
-      <a href="#" class="w3-bar-item w3-button w3-hover-black">2</a>
-      <a href="#" class="w3-bar-item w3-button w3-hover-black">3</a>
-      <a href="#" class="w3-bar-item w3-button w3-hover-black">4</a>
-      <a href="#" class="w3-bar-item w3-button w3-hover-black">»</a>
-    </div>
-  </div>
-  
-  <hr id="quees">
-
-  <!-- About Section -->
-  <div class="w3-container w3-padding-32 w3-center">  
-    <h3>¿Qué es?</h3><br>
-    <img src="/w3images/chef.jpg" alt="Me" class="w3-image" style="display:block;margin:auto" width="800" height="533">
-    <div class="w3-padding-32">
-      <h4><b>¿Qué es?</b></h4>
-      <h6><i>With Passion For Real, Good Food</i></h6>
-      <p>El neoplanticismo es una vanguadrdia  artística que nació en Holanda
-en 1917, que buscaba la armonía universal a través de líneas rectas, 
-colores  primarios y formas geométricas básicas, que influía en el arte, 
-el diselo y la arquitectura moderna.
-Ha surgido y tiene mayor importancia en países bajos (Holanda).
-Ahí se ha fundado en 1917 la revista De Stijl (La Estilo) por Theo Van 
-Doesburg con la participación de Piet Mondrian, Bart van der Leck, Gerrit
-Rietveld, entre otros.
-Sus mayores exponentes principales fueron artistas y arquitectos 
-neerlandeses, y su desarrollo inicial estuvo muy ligado al contexto culturalde los países bajos.</p>
-    </div>
-  </div>
+  </section>
   <hr>
   
   <!-- Footer -->
-  <footer class="w3-row-padding w3-padding-32">
-    <div class="w3-third">
-      <h3>FOOTER</h3>
-      <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
-      <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
-    </div>
-  
-    <div class="w3-third">
-      <h3>BLOG POSTS</h3>
-      <ul class="w3-ul w3-hoverable">
-        <li class="w3-padding-16">
-          <img src="/w3images/workshop.jpg" class="w3-left w3-margin-right" style="width:50px">
-          <span class="w3-large">Lorem</span><br>
-          <span>Sed mattis nunc</span>
-        </li>
-        <li class="w3-padding-16">
-          <img src="/w3images/gondol.jpg" class="w3-left w3-margin-right" style="width:50px">
-          <span class="w3-large">Ipsum</span><br>
-          <span>Praes tinci sed</span>
-        </li> 
-      </ul>
-    </div>
-
-    <div class="w3-third w3-serif">
-      <h3>POPULAR TAGS</h3>
-      <p>
-        <span class="w3-tag w3-black w3-margin-bottom">Travel</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">New York</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Dinner</span>
-        <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Salmon</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">France</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Drinks</span>
-        <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Ideas</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Flavors</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Cuisine</span>
-        <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Chicken</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Dressing</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Fried</span>
-        <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Fish</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Duck</span>
-      </p>
+  <footer class="w3-padding-32">
+    <div class="w3-center">
+      <div class="w3-xlarge">
+        <a href="#" class="w3-margin-right" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="#" class="w3-margin-right" aria-label="X"><i class="fab fa-x-twitter"></i></a>
+        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+      </div>
+      <p class="w3-small w3-margin-top">@2025 Lisandro Espósito. Todos los derechos reservados.</p>
     </div>
   </footer>
 
